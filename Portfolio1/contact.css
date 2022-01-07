@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,800&family=Raleway:wght@900&display=swap);
+
+head, body {
+    background-image: url("backgroundpic.jpg");
+}
+h1 {
+    color: #2fceeb;
+    font-family: "Open-Sans", sans-serif;
+}
+
+body {
+    font-family: "Open-Sans", sans-serif;
+    padding: 1em;
+}
+
+form {
+    margin-top: 2.5em;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 2.5em;
+
+    border: 1px solid rgb(17, 63, 116);
+
+    max-width: 800px;
+    min-width: 700px;
+
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-gap: 12px;
+}
+form label {
+   font-family: 'Raleway', sans-serif;  
+   font-size: 1.2em;
+   color: rgb(6, 63, 110);
+}
+
+form input, textarea{
+    outline-style: 3px solid rgb(64, 203, 228);
+}
+
+input[type="submit"], input[type="reset"]{
+    width: 150px;
+    background-color: rgb(51, 97, 224);
+    color: white;
+}
+
+input[type="submit"]:hover, 
+input[type="submit"]:focus {
+    background-color: aqua;
+    color: black;}
+
+
+input[type="reset"]:hover, 
+input[type="reset"]:focus {
+    background-color: aqua;
+    color: black;}
+
+    
+    .button{
+        text-decoration: double;
+    }
+
+    #feedbackscreenshot {
+        background-color: rgb(31, 135, 231);
+        bottom: color white;
+    }
+
+
+   
+    h1 {
+        color: rgb(30, 148, 156);
+        margin-left: 6%;
+        width: 44%;
+        height: 44%;
+    
+    }
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin : 0 20px;
+        color: rgb(34, 6, 6);
+        position: relative;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(15, 73, 46);
+        text-transform: uppercase;
+    }
+    
+    .navbar ul li::after{
+        content: " ";
+        height: 3px;
+        width: 0;
+        background:#009688;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    
+    .navbar ul li:hover::after {
+        width:100%;
+    }
+    
+
+

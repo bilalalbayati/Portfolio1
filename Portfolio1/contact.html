@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <link rel="stylesheet" href="contact.css" type="text/css">
+</head>
+<body>
+    <h1>CONTACT FORM</h1>
+    <div class="navbar">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>            
+        </ul>  
+    </div>
+   
+    <form name="feedback" id="feedbackform"  action="https://formspree.io/f/xdobodvl" method="post" >
+
+        <label for="FULLNAME">FULL NAME:</label>
+        <input
+        id="FULLNAME"
+        name="FULLNAME"
+        type="text"
+        maxlength="25"
+        autocomplete="FULL NAME"
+        autofocus
+        tabindex="1"
+        required
+        />
+
+        <label for="email">Email:</label>
+        <input
+        id="email"
+        name="email"
+        name="_replyto"
+        type="email"
+        autocomplete="email"
+        tabindex="2"
+        required
+        />
+
+        <label for="address">ADDRESS</label>
+        <input
+        id="address"
+        name="address"
+        type="text"
+        autocomplete="address"
+        tabindex="3"
+        required
+        />
+        <label for="CITY">CITY</label>
+        <input
+        id="CITY"
+        name="CITY"
+        type="text"
+        autocomplete="CITY"
+        tabindex="4"
+        required
+        />   
+
+        <label for="PostalCode">Postal Code</label>
+        <input
+        id="PostalCode"
+        name="PostalCode"
+        type="postalcode"
+        autocomplete="PostalCode"
+        tabindex="5"
+        required
+        />   
+
+         <div class="aboutf">
+        <p>What it's about?</p>
+        <input type="radio" id="html" name="Question" value="Question">
+       <label for="html">Question</label><br>
+       <input type="radio" id="css" name="Comment" value="Comment">
+       <label for="Comment">Comment</label><br>
+       <input type="radio" id="Hiring" name="Hiring" value="Hiring">
+      <label for="Hiring">Hiring</label>
+        </div>
+
+        <label for="message">Please write your Comment or your question in the box below”</label>
+        <textarea
+         id="message"        
+        name="Message"
+        rows="10"      
+        cols="20"
+        placeholder="Please write your Comment or question here"
+        tabindex="6"
+        >
+        </textarea>
+
+        <label for="feedbackdob">DATE OF FORM SUBMISSION</label>
+        <input
+        id="feedbackdob"
+        name="date"
+        type="date"
+        autocomplete="date"
+        tabindex="7"
+        />
+
+        <br>
+        <div class="buttons">
+            <input type="submit" name="submit" value="Send" tabindex="8">
+            <input type="reset" name="reset" valuesubmit" value="reset" tabindex="9">
+        </div>
+    </form>
+
+</body>
+</html>
